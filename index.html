@@ -13,16 +13,17 @@
 <body>
     <header id="inicio">
         <!-- Define el encabezado de una página o sección. Contiene elementos como logotipos, títulos y menús de navegación-->
-        <img src="Imagenes/Logo4.png" width="" alt="">
+        <img src="Imagenes/JPR4.png" width="" alt="">
         <h1>Consultoría Financiera JPR</h1> <!-- Esto tiene que ver con la búsqueda, es importante que haya uno solo -->
         <nav>
             <!-- Representa una sección de navegación con enlaces a otras partes de la página o a diferentes páginas-->
             <ul> 
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#clientes">Clientes </a></li>
+                <li><a href="#secServicios">Servicios</a></li>
+                <li><a href="#objetivos">Objetivos </a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
             </ul>
         </nav>
     </header>
@@ -31,43 +32,33 @@
     <!--Sección Principal-->
     <main>
         <!-- Contiene el contenido principal del documento, que es único y esencial para la página -->
-         <section id="servicios">
+         <section id="secServicios" class="box">
             <h2>Servicios</h2>
-            <img src="Imagenes/Analisis financieros.png" alt="Análisis financieros" width="200">
-            <img src="Imagenes/Analisis legal.png" alt="Análisis legal" width="200">
-            <img src="Imagenes/Estudio de proyectos.png" alt="Estudio de proyectos" width="200">
-            <img src="Imagenes/Estudios de mercado.png" alt="Estudios de mercado" width="200">
-            <img src="Imagenes/Mejora de procesos.png" alt="Mejora de procesos" width="200">
+            <div id="servicios"></div>
          </section>
 
-         <section id="clientes">    
-            <h2> Clientes</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellat doloribus veniam non sit! Impedit in quo deleniti mollitia, a aperiam vel exercitationem enim obcaecati illo architecto, itaque cum sed.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ipsum nemo sequi dicta officiis autem voluptates odio explicabo pariatur quas expedita, ratione dolorum placeat nisi tempore rerum? Mollitia, velit repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam deleniti quos magnam enim aut, asperiores aliquid nam sapiente nulla nobis voluptas iure, facilis itaque qui accusantium officiis quo consectetur!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident deleniti maiores cum doloribus, quia tempore sapiente earum dicta enim veniam? Quas consequatur nulla officiis quis dolore voluptatibus tempora nam.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consequatur eos aliquid non, eaque ut asperiores possimus rem consequuntur nisi ea tempore molestiae expedita aliquam voluptate nemo? Quas, quis quae!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam voluptas reprehenderit natus in quae maxime dicta sunt fuga debitis ex sed quia ea quaerat corrupti placeat earum, accusantium odio iusto.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellat doloribus veniam non sit! Impedit in quo deleniti mollitia, a aperiam vel exercitationem enim obcaecati illo architecto, itaque cum sed.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ipsum nemo sequi dicta officiis autem voluptates odio explicabo pariatur quas expedita, ratione dolorum placeat nisi tempore rerum? Mollitia, velit repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam deleniti quos magnam enim aut, asperiores aliquid nam sapiente nulla nobis voluptas iure, facilis itaque qui accusantium officiis quo consectetur!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident deleniti maiores cum doloribus, quia tempore sapiente earum dicta enim veniam? Quas consequatur nulla officiis quis dolore voluptatibus tempora nam.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consequatur eos aliquid non, eaque ut asperiores possimus rem consequuntur nisi ea tempore molestiae expedita aliquam voluptate nemo? Quas, quis quae!
-                
+         <section id="carrito" class="box">
+            <h2>Carrito</h2>
+            <ul></ul>
+            <p>Total a pagar: $0</p>
+            <input id="boton-borrar" type="button" value="Borrar">
+            <input id="boton-pagar" type="button" value="Ir a Pagar">
+            <p id="msjCarrito"></p>
+         </section>
+
+         <section id="objetivos" class="box">    
+            <h2> Objetivos</h2>
+            <p>Nuestra empresa de consultoría financiera está dirigida a empresas de todos los tamaños y sectores, desde emprendedores y startups hasta grandes corporaciones. También ofrecemos soluciones personalizadas para profesionales independientes y organizaciones que buscan optimizar sus recursos, mitigar riesgos y alcanzar objetivos estratégicos con confianza.
             </p>
          </section>
             
-         <section id="nosotros">
+         <section id="nosotros" class="box">
             <h2>Nosotros</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellat doloribus veniam non sit! Impedit in quo deleniti mollitia, a aperiam vel exercitationem enim obcaecati illo architecto, itaque cum sed.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ipsum nemo sequi dicta officiis autem voluptates odio explicabo pariatur quas expedita, ratione dolorum placeat nisi tempore rerum? Mollitia, velit repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam deleniti quos magnam enim aut, asperiores aliquid nam sapiente nulla nobis voluptas iure, facilis itaque qui accusantium officiis quo consectetur!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident deleniti maiores cum doloribus, quia tempore sapiente earum dicta enim veniam? Quas consequatur nulla officiis quis dolore voluptatibus tempora nam.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consequatur eos aliquid non, eaque ut asperiores possimus rem consequuntur nisi ea tempore molestiae expedita aliquam voluptate nemo? Quas, quis quae!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam voluptas reprehenderit natus in quae maxime dicta sunt fuga debitis ex sed quia ea quaerat corrupti placeat earum, accusantium odio iusto.
+            <p>Nos dedicamos a brindar soluciones integrales en consultoría financiera, legal y estratégica. Con un equipo multidisciplinario altamente capacitado, ayudamos a nuestros clientes a tomar decisiones informadas y alcanzar sus metas. Nuestro enfoque combina experiencia, innovación y compromiso, adaptándonos a las necesidades únicas de cada cliente. Creemos firmemente en el poder de la colaboración y trabajamos continuamente para construir un futuro financiero sólido y sostenible.
             </p>
          </section>
          
-         <section id="contacto">
+         <section id="contacto" class="box">
             <h2>Contacto</h2>
             <form action="https://formspree.io/f/mnnqpywq" method="POST">
                 <label for="nombre">Nombre:</label>
@@ -78,8 +69,33 @@
                 
                 <label for="mansaje">Mensaje:</label>
                 <textarea name="mansaje" id="mensaje" rows="4" cols="50" required></textarea>
-                <button type="submit">Enviar</button>
+                <button class="boton" type="submit">Enviar</button>
             </form>
+        </section>
+        <section  id="reseñas" class="box">
+            <h2>Reseñas de nuestros clientes</h2>
+            <div class="reseñas">
+                <div class="reseña">
+                    <h3>Decisiones financieras más acertadas</h3>
+                    <p>"El análisis financiero que nos proporcionaron fue detallado y claro. Gracias a ello, pudimos identificar áreas críticas y optimizar nuestra rentabilidad. Su equipo realmente sabe lo que hace."</p>
+                    <cite>Alejandro Gómez, gerente financiero de una empresa manufacturera.</cite>
+                </div>
+                <div class="reseña">
+                    <h3>Cumplimiento legal impecable</h3>
+                    <p>“Recibimos asesoría legal para un proyecto de expansión, y su análisis nos ayudó a prevenir posibles riesgos regulatorios. Nos dieron tranquilidad y confianza para seguir adelante.”</p>
+                    <cite>Laura Silva, CEO de una startup tecnológica.</cite>
+                </div>
+                <div class="reseña">
+                    <h3>Una guía estratégica para crecer</h3> 
+                    <p>“El estudio de mercado que desarrollaron para nosotros nos permitió identificar nuevas oportunidades y segmentar mejor a nuestros clientes. Sus recomendaciones marcaron un antes y un después en nuestra estrategia comercial.”</p> 
+                    <cite>Ricardo Torres, director de marketing de una empresa minorista.</cite>
+                </div>
+                <div class="reseña">
+                    <h3>Procesos eficientes, resultados sobresalientes</h3> 
+                    <p>“Gracias a su enfoque en la mejora de procesos, logramos reducir costos y aumentar la productividad en un 20%. Su metodología es realmente efectiva.”</p> 
+                    <cite>Mónica Rivas, gerente de operaciones de una empresa logística.</cite>
+                </div>
+            </div>
         </section>
     </main>
     
@@ -92,6 +108,7 @@
             <li><a href="https://www.facebook.com/ayelen.campero.9" target="_blank">Facebook</a></li>
         </ul>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

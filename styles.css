@@ -1,20 +1,26 @@
 /* Selector universal: Aplica estilos a todos los elementos */
 * {
     /*background-color: #6d6bdb;*/
-    color: #040433; /* Color del texto */
+    color: #B5874B; /* Color del texto */
+    font-family: 'Calibri';
 }
 
 body {
-    background-color: #9493e0;
+    background: #2B363F /*Color fondo del cuerpo */
 }
-/* Encabezado principal */
+
+h1, h2 {
+    text-shadow: 5px 5px 5px black;
+}
+/* Encabezado principal id=inicio*/
 header {
-    background: linear-gradient(to bottom, #232197, #9493e0); /* Fondo con degradado vertical */
+    background: #2B363F;
     display: flex; /* Usa Flexbox para organizar los elementos en una fila */
+    flex-wrap: wrap;
     justify-content: space-between; /* Coloca los elementos en los extremos (izquierda y derecha) */
     align-items: center; /* Alinea verticalmente los elementos al centro */
     min-height: 85px; /* Altura mínima del encabezado */
-    padding: 10px; /* Espaciado interior */
+    padding: 1rem; /* Espaciado interior */
     position: sticky; /* Hace que el encabezado permanezca visible al hacer scroll */
     top: 0; /* Fija el encabezado al borde superior */
     z-index: 1; /* Asegura que el encabezado esté sobre otros elementos */
@@ -23,24 +29,27 @@ header {
 
 /* Títulos grandes */
 h1 {
-    font-size: 250%; /* Tamaño de fuente extra grande */
+    font-size: 300%; /* Tamaño de fuente extra grande */
     font-family: 'Anton+SC', sans-serif; /* Fuente personalizada con respaldo sans-serif */
 }
 
+h2 {
+    font-size: 200%; /* Tamaño de fuente extra grande */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: leftq  ; 
+    gap: 20px; 
+    text-align: center;
+}
 /* Párrafos */
 p {
-    color: #070669; /* Color del texto de los párrafos */
-}
-
-/* Imágenes dentro del elemento con ID "inicio" */
-#inicio img {
-    width: 10%; /* Ancho de la imagen: 10% del contenedor */
-    height: 10%; /* Altura de la imagen: 10% del contenedor */
+    color: #FFFFFF	; /* Color del texto de los párrafos */
 }
 
 /* Barra de navegación dentro del encabezado */
 header nav {
     display: flex; /* Organiza los elementos de navegación en una fila */
+    flex-wrap: wrap;
     justify-content: flex-end; /* Alinea los elementos hacia el lado derecho */
 }
 
@@ -50,7 +59,7 @@ header nav ul {
     justify-content: center; /* Centra los elementos dentro del contenedor */
     list-style: none; /* Elimina los marcadores predeterminados de la lista */
     text-decoration: none; /* Elimina subrayados de los elementos de texto */
-    padding: 20px; /* Añade un pequeño espacio interior */
+    padding: 2px; /* Añade un pequeño espacio interior */
 }
 
 /* Elementos de la lista dentro del encabezado */
@@ -65,12 +74,128 @@ header li {
 header a {
     padding: 10px; /* Espaciado alrededor del enlace */
     text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #8ccaef; /* Color del texto del enlace */
+    color: #FFFFFF; /* Color del texto del enlace */
 }
 
+/* Imágenes dentro del elemento con ID "inicio" */
+#inicio img {
+    width: 10%; /* Ancho de la imagen: 10% del contenedor */
+    height: 10%; /* Altura de la imagen: 10% del contenedor */
+}
+
+.box {
+    padding: 2rem;          /* Espaciado interno */
+    border-radius: 8px;     /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 800px;       /* Ancho máximo */
+    width: 90%;             /* Ancho responsivo */
+    margin: 0 auto;         /* Centra las cajas */
+}
+/*Servicios*/
+#servicios {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.servicio img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.servicio {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.servicio:hover {
+    transform: scale(1.005);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.servicio h2{
+    font-size: 150%;
+    margin: 0;
+}
+
+.servicio a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.servicio-contenido {
+    min-height: 12rem;
+    padding: 0 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.boton {
+    background-color: #B5874B; /* Color de fondo dorado*/
+    color: white;  /* Color del texto blanco */
+    border-radius: 15px;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.boton-agregar-carrito {
+    background-color: #B5874B; /* Color de fondo dorado*/
+    color: white;  /* Color del texto blanco */
+    border-radius: 15px;
+}
+
+.boton-agregar-carrito:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#carrito p{
+    color: #B5874B;
+}
+.reseñas {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.reseña {
+    border: 1px solid #FFFFFF;
+    border-radius: .5rem;
+    padding: 1rem;
+    
+}
+
+.reseña:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 /* Formularios */
 form {
     color: black; /* Color del texto dentro del formulario */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: left;
+    margin-bottom: 3rem;
+}
+
+form input{
+    width: 20rem;
+}
+form textarea {
+    color: black;
 }
 
 /* Elementos de lista dentro del pie de página */
@@ -84,4 +209,29 @@ footer a {
 }
 footer {
     background: linear-gradient(to bottom, #6d6bdb),#232197; /* Fondo con degradado vertical */
+}
+
+@media (max-with: 900px) {
+    section {
+        padding: .3rem;
+    }
+}
+
+@media (max-with: 600px) {
+    html {
+        font-size: 12px;
+        margin: 0 5%;
+    }
+    section {
+        padding: 1.2rem;
+    }
+    section h2, h3 {
+        font-size: 13px;
+        padding: .3rem;
+    }
+    form textarea, input {
+        display: block;
+        width: 90%;
+    }
+    
 }
