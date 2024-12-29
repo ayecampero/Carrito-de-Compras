@@ -160,6 +160,27 @@ header a {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+#boton-pagar {
+    background-color: #B5874B; /* Color de fondo dorado*/
+    color: white;  /* Color del texto blanco */
+    border-radius: 15px;
+}
+
+#boton-pagar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#boton-borrar {
+    background-color: #B5874B; /* Color de fondo dorado*/
+    color: white;  /* Color del texto blanco */
+    border-radius: 15px;
+}
+
+#boton-borrar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 #carrito p{
     color: #B5874B;
 }
